@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portfolio and academic planner of Oyewale Ayokunle Jewoola, cybersecurity student at MIVA Open University.">
+<title>Academic Planner | Oyewale Jewoola</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+<a class="brand" href="index.html">OAJ</a>
+<button id="menu-btn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+<nav id="nav"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="planner.html" class=active aria-current=page>Planner</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+</header>
+<main>
+<section class="wrap narrow">
+<h1>Academic planner</h1>
+<p>Add your assignments, lectures and study goals. Tasks are saved in this browser.</p>
+<form id="task-form" class="row" novalidate>
+<label for="task-input" class="sr">New task</label>
+<input id="task-input" type="text" placeholder="e.g. Finish COS 106 term project" maxlength="100" autocomplete="off">
+<button class="btn" type="submit">Add task</button>
+</form>
+<p id="task-error" class="error" role="alert"></p>
+<p id="task-count" class="muted" aria-live="polite"></p>
+<ul id="task-list" class="tasks"></ul>
+</section>
+</main>
+<footer class="site-footer">
+<p>&copy; 2026 Oyewale Ayokunle Jewoola. MIVA Open University, Cybersecurity.</p>
+<p><a href="https://github.com/experthenry100-ctrl">GitHub</a> | <a href="mailto:oyewaleayokunle286@gmail.com">Email</a></p>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
